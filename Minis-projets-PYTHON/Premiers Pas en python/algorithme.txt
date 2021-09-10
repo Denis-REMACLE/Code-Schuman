@@ -1,0 +1,141 @@
+exo 1
+Récupération de l unitée de conversion en tant que unit ( nombre réel )
+Récupération de la température en tant que val ( nombre réel )
+Si unit=0
+	Alors calcule val=0.55556*(val-32) et affiche val
+Ou si unit=1
+	Alors calcule val=(val/0.55556)+32 et affiche val
+Sinon affiche une erreur
+
+exo 2
+Récupération de la valeur de la tva en tant que tva ( nombre réel )
+Récupération du prix en tant que val ( nombre réel )
+Si tva=0
+	Alors calcule val = val+(val * 0.1) et affiche val
+Ou si tva=1
+	Alors calcule val = val+(val * 0.2) et affiche val
+Sinon affiche une erreur
+
+exo 3
+Récupération des valeurs a, b, c (nombres réels)
+calcul de delta tel que delta = (b*b) - (4 * a * c)
+si delta est inferieur à zéro
+	afficher "il n'y a pas de solution"
+Ou si delta est égal à zéro
+	calculer x=-b/(2*a)
+
+exo 4
+Récupération des valeurs i, j (nombre entiers)
+Création d'un tableau t
+tant que k n'est pas égal à i
+	creer un tableau tab
+	tant que L n'est pas égal à j
+		remplir le tableau avec des zéros et des 1
+	mettre tab dans t
+afficher t
+
+Exercice 5 partie 1
+déclaration de i = 0, partie, argent, un=0, x=0, resultat
+Récupération du nombre de parties a jouer en tant que partie (nombre entier)
+tant que i n'égale pas partie
+	Récupération de la quantitée d'argent en tant que argent
+	tant que x n'égale pas 6
+		Récupération de la valeur affichée sur le dé en tant que résultat
+		si resultat égale 1
+			un = un + 1
+		sinon
+			un = un
+	fin de tant que
+	si un est inférieur a 2
+		retirer 2 à argent
+	si un est supérieur a 4
+		ajouter 10 à argent
+	sinon
+		ajouter 5 à argent
+fin de tant que
+
+exercice 5 partie 2
+déclaration de i = 0, partie, argent, un=0, x=0, resultat, tab
+Récupération du nombre de parties a jouer en tant que partie (nombre entier)
+tant que i n'égale pas partie
+	Récupération de la quantitée d'argent en tant que argent
+	tant que x n'égale pas 6
+		Récupération de la valeur affichée sur le dé en tant que résultat
+		si resultat égale 1
+			un = un + 1
+		sinon
+			un = un
+		insertion de resultat dans tab
+	fin de tant que
+	si un est inférieur a 2
+		retirer 2 à argent
+	si un est supérieur a 4
+		ajouter 10 à argent
+	sinon
+		ajouter 5 à argent
+fin de tant que
+
+exercice 5 partie 3
+déclaration de i = 0, partie, argent, un=0, x=0, resultat, tab
+Récupération du nombre de parties a jouer en tant que partie (nombre entier)
+tant que i n'égale pas partie
+	Récupération de la quantitée d'argent en tant que argent
+	tant que x n'égale pas 6
+		Récupération de la valeur affichée sur le dé en tant que résultat
+		si resultat égale 1
+			un = un + 1
+			insertion de resultat dans tab
+		Ou si resultat est supérieur à 6
+			Afficher "entre 1 et 6"
+			x = x - 1
+		Ou si resultat est inférieur à 1
+			Afficher "entre 1 et 6"
+			x = x - 1
+		sinon
+			un = un
+			insertion de resultat dans tab
+	fin de tant que
+	si un est inférieur a 2
+		retirer 2 à argent
+	si un est supérieur a 4
+		ajouter 10 à argent
+	sinon
+		ajouter 5 à argent
+fin de tant que
+
+exercice 5 partie 3
+déclaration de i = 0, partie, argent, un=0, x=0, resultat, tab
+Récupération du nombre de parties a jouer en tant que partie (nombre entier)
+tant que i n'égale pas partie
+	Récupération de la quantitée d'argent en tant que argent
+	tant que x n'égale pas 6
+		Récupération de la valeur affichée sur le dé en tant que résultat
+		si resultat égale 1
+			un = un + 1
+			insertion de resultat dans tab
+		Ou si resultat est supérieur à 6
+			Afficher "entre 1 et 6"
+			x = x - 1
+		Ou si resultat est inférieur à 1
+			Afficher "entre 1 et 6"
+			x = x - 1
+		sinon
+			un = un
+			insertion de resultat dans tab
+	fin de tant que
+	si un est inférieur a 2
+		retirer 2 à argent
+		afficher "vous avez perdu 2 euros"
+		afficher "Vous possédez désormais" argent " euros"
+		afficher tab
+	si un est supérieur a 4
+		ajouter 10 à argent
+		afficher "vous avez gagné 10 euros"
+		afficher "Vous possédez désormais" argent " euros"
+		afficher tab
+	sinon
+		ajouter 5 à argent
+		afficher "vous avez gagné 5 euros"
+		afficher "Vous possédez désormais" argent " euros"
+		afficher tab
+fin de tant que
